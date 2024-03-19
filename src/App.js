@@ -11,6 +11,7 @@ import About from './about';
 import Missing from './Missing';
 import Footer from './Footer';
 import api from './api/post.js'
+import useAxiosFetch from './hooks/useAxiosFetch.js';
 
 
 function App() {
@@ -20,8 +21,12 @@ function App() {
    const [postBody, setPostBody] = useState('');
    const [posts,setPosts]=useState([])
    const navigate=useNavigate()
+   const {data,fetchError,isLoading}=useAxiosFetch('http://localhost:3500/posts')
 
     
+   useEffect(()=>{
+    setPosts(data)
+   },[data])
 useEffect(()=>{
    const filteredResults =posts.filter((post)=>
    ((post.body).toLowerCase()).includes(search.toLowerCase())||((post.title).toLowerCase()).includes(search.toLowerCase()));
@@ -81,7 +86,9 @@ return (
   />
 
    <Routes>
-     <Route path='/' element={<Home posts={searchResults}/>}/>
+     <Route path='/' element={<Home posts={searchResults}
+     fetchError={fetchError}
+     isLoading={isLoading}/>}/>
      <Route path='/header' element={<Home posts={<Header 
           title="Say"
           search={search}

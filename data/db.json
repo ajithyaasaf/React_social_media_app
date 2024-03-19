@@ -1,49 +1,43 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "hi",
       "datetime": "March 19, 2024 2:11:35 PM",
       "body": "good mornig"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "people",
       "datetime": "March 19, 2024 2:11:53 PM",
       "body": "peoples are really good in this city"
     },
     {
-      "id": 3,
-      "title": "gd eve",
-      "datetime": "March 19, 2024 2:13:26 PM",
-      "body": "good evening to everyone"
-    },
-    {
-      "id": 4,
+      "id": "4",
       "title": "Tech",
       "datetime": "March 19, 2024 2:14:21 PM",
       "body": "In future everything mostly depends on tech"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "car",
       "datetime": "March 19, 2024 2:15:00 PM",
       "body": "thor is my favourite car"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "color",
       "datetime": "March 19, 2024 2:17:05 PM",
       "body": "blue is my favourite color"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "food",
       "datetime": "March 19, 2024 2:18:17 PM",
       "body": "Chicken is my favourite food"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Favourite Programming language",
       "datetime": "March 19, 2024 2:18:56 PM",
       "body": "Javascript is my favourite programming language"
